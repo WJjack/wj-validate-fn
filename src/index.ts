@@ -28,7 +28,8 @@ export const regIncludeCN = /[\u4E00-\u9FA5]/; // 包含中文的正则
  * @returns boolean
  */
 export function validateEmpty(value: any): boolean {
-    return regEmpty.test(value);
+    return (value === null || value === undefined || value === '' || regEmpty.test(value));
+    // return regEmpty.test(value);
 }
 
 /**
@@ -92,7 +93,7 @@ export function validateDateTime(value: string): boolean {
 }
 
 /**
- * 验证整数
+ * @description 验证整数
  * @param value 
  * @returns boolean
  */

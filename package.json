@@ -1,6 +1,6 @@
 {
   "name": "wj-validate-fn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "常用校验函数和正则表达式",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "keywords": ["wj", "validate", "validator"],
+  "keywords": ["validate", "validator", "wj"],
   "author": "wjjack",
   "license": "ISC",
   "devDependencies": {
