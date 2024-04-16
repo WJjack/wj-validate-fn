@@ -205,7 +205,7 @@ export function validateIncludeCN(value: string): boolean {
 export function validateNumeric(value: any) {    
     const isNumeric =
     ['string', 'number'].includes(typeof value) &&
-    /^-?\d$/.test(value) &&
+    /^-?\d+$/.test(value) &&
     isFinite(value);
 
     return isNumeric;
