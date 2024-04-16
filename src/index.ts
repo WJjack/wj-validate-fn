@@ -196,3 +196,17 @@ export function validateIncludeCN(value: string): boolean {
     const str = value.trim();
     return regIncludeCN.test(str);
 }
+
+/**
+ * @description 校验是否是数字
+ * @param value 
+ * @returns boolean
+ */
+export function validateNumeric(value: any) {    
+    const isNumeric =
+    ['string', 'number'].includes(typeof value) &&
+    /^-?\d$/.test(value) &&
+    isFinite(value);
+
+    return isNumeric;
+}
